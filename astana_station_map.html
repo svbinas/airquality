@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_52bbd586e2eac68db46a965483ce6e3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_52bbd586e2eac68db46a965483ce6e3f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_52bbd586e2eac68db46a965483ce6e3f = L.map(
+                "map_52bbd586e2eac68db46a965483ce6e3f",
+                {
+                    center: [51.1536314928, 71.4385392614],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33553fc51ec89ad88f0f28e610e4561b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_33553fc51ec89ad88f0f28e610e4561b.addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var marker_8d6518d5e92222121d0b00a463d1c856 = L.marker(
+                [51.181287116, 71.465806956],
+                {}
+            ).addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var icon_1ccac155dd036fec92a7705370e0b12f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d6518d5e92222121d0b00a463d1c856.setIcon(icon_1ccac155dd036fec92a7705370e0b12f);
+        
+    
+        var popup_6cd6fc25f148923a5abfa6364b171340 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41120e2c5604bc8e2c0c72cb3bce16fe = $(`<div id="html_41120e2c5604bc8e2c0c72cb3bce16fe" style="width: 100.0%; height: 100.0%;">     <b>k12</b><br>     <table>         <tr><td>City:</td><td>Astana</td></tr>         <tr><td>Station:</td><td>k12</td></tr>         <tr><td>Address:</td><td>Akzhol, distr. of wastewater "Astana Tazalyk"</td></tr>         <tr><td>Sea Level:</td><td>357</td></tr>         <tr><td>Status:</td><td>ok</td></tr>     </table>     </div>`)[0];
+                popup_6cd6fc25f148923a5abfa6364b171340.setContent(html_41120e2c5604bc8e2c0c72cb3bce16fe);
+            
+        
+
+        marker_8d6518d5e92222121d0b00a463d1c856.bindPopup(popup_6cd6fc25f148923a5abfa6364b171340)
+        ;
+
+        
+    
+    
+            marker_8d6518d5e92222121d0b00a463d1c856.bindTooltip(
+                `<div>
+                     k12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_669cef3945a18c7010d9ec1b739d7a82 = L.marker(
+                [51.119222952, 71.432335527],
+                {}
+            ).addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var icon_b596451356776b91c72cc4108507f22f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_669cef3945a18c7010d9ec1b739d7a82.setIcon(icon_b596451356776b91c72cc4108507f22f);
+        
+    
+        var popup_4b19283c73a03eb3f76d83846d96d782 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e37a068ed3f44679d45bae706a0020e = $(`<div id="html_5e37a068ed3f44679d45bae706a0020e" style="width: 100.0%; height: 100.0%;">     <b>k4</b><br>     <table>         <tr><td>City:</td><td>Astana</td></tr>         <tr><td>Station:</td><td>k4</td></tr>         <tr><td>Address:</td><td>Turkestan St, 2/1, RPhMS</td></tr>         <tr><td>Sea Level:</td><td>349</td></tr>         <tr><td>Status:</td><td>ok</td></tr>     </table>     </div>`)[0];
+                popup_4b19283c73a03eb3f76d83846d96d782.setContent(html_5e37a068ed3f44679d45bae706a0020e);
+            
+        
+
+        marker_669cef3945a18c7010d9ec1b739d7a82.bindPopup(popup_4b19283c73a03eb3f76d83846d96d782)
+        ;
+
+        
+    
+    
+            marker_669cef3945a18c7010d9ec1b739d7a82.bindTooltip(
+                `<div>
+                     k4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46f347d6d62b493f48e1fa6cf6081eae = L.marker(
+                [51.18611299, 71.343722851],
+                {}
+            ).addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var icon_0a8979c7b1d5e189eb9e0e43c5b5423f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46f347d6d62b493f48e1fa6cf6081eae.setIcon(icon_0a8979c7b1d5e189eb9e0e43c5b5423f);
+        
+    
+        var popup_9c3c97e2d0ae442b648bc277f2ebb495 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e30499073314fd548637c044279e83e6 = $(`<div id="html_e30499073314fd548637c044279e83e6" style="width: 100.0%; height: 100.0%;">     <b>k8</b><br>     <table>         <tr><td>City:</td><td>Astana</td></tr>         <tr><td>Station:</td><td>k8</td></tr>         <tr><td>Address:</td><td>Babatayuly St, 24</td></tr>         <tr><td>Sea Level:</td><td>346</td></tr>         <tr><td>Status:</td><td>not</td></tr>     </table>     </div>`)[0];
+                popup_9c3c97e2d0ae442b648bc277f2ebb495.setContent(html_e30499073314fd548637c044279e83e6);
+            
+        
+
+        marker_46f347d6d62b493f48e1fa6cf6081eae.bindPopup(popup_9c3c97e2d0ae442b648bc277f2ebb495)
+        ;
+
+        
+    
+    
+            marker_46f347d6d62b493f48e1fa6cf6081eae.bindTooltip(
+                `<div>
+                     k8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f64c45227dae4c5a12104accd856afe9 = L.marker(
+                [51.123120595, 71.483370959],
+                {}
+            ).addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var icon_113cb043641c49c1d93c1c9d43ce2cc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f64c45227dae4c5a12104accd856afe9.setIcon(icon_113cb043641c49c1d93c1c9d43ce2cc7);
+        
+    
+        var popup_600b5abbfef040f187febfb1ef31738f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_97966dfa8663a1973f7d05837354ed92 = $(`<div id="html_97966dfa8663a1973f7d05837354ed92" style="width: 100.0%; height: 100.0%;">     <b>k7</b><br>     <table>         <tr><td>City:</td><td>Astana</td></tr>         <tr><td>Station:</td><td>k7</td></tr>         <tr><td>Address:</td><td>A. Baitursynov St, 25</td></tr>         <tr><td>Sea Level:</td><td>355</td></tr>         <tr><td>Status:</td><td>ok</td></tr>     </table>     </div>`)[0];
+                popup_600b5abbfef040f187febfb1ef31738f.setContent(html_97966dfa8663a1973f7d05837354ed92);
+            
+        
+
+        marker_f64c45227dae4c5a12104accd856afe9.bindPopup(popup_600b5abbfef040f187febfb1ef31738f)
+        ;
+
+        
+    
+    
+            marker_f64c45227dae4c5a12104accd856afe9.bindTooltip(
+                `<div>
+                     k7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bf9e72495e51251dbfa449374fbb053 = L.marker(
+                [51.158413811, 71.467460014],
+                {}
+            ).addTo(map_52bbd586e2eac68db46a965483ce6e3f);
+        
+    
+            var icon_f2006704871b71373f5b3bfa34f7078b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bf9e72495e51251dbfa449374fbb053.setIcon(icon_f2006704871b71373f5b3bfa34f7078b);
+        
+    
+        var popup_266208ac1db5776cf3cb7c4ead2e70e5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_16bfbce1c0ca63211ad50b2276d2f06c = $(`<div id="html_16bfbce1c0ca63211ad50b2276d2f06c" style="width: 100.0%; height: 100.0%;">     <b>k9</b><br>     <table>         <tr><td>City:</td><td>Astana</td></tr>         <tr><td>Station:</td><td>k9</td></tr>         <tr><td>Address:</td><td>K. Munaitpasov St, 13</td></tr>         <tr><td>Sea Level:</td><td>351</td></tr>         <tr><td>Status:</td><td>not</td></tr>     </table>     </div>`)[0];
+                popup_266208ac1db5776cf3cb7c4ead2e70e5.setContent(html_16bfbce1c0ca63211ad50b2276d2f06c);
+            
+        
+
+        marker_6bf9e72495e51251dbfa449374fbb053.bindPopup(popup_266208ac1db5776cf3cb7c4ead2e70e5)
+        ;
+
+        
+    
+    
+            marker_6bf9e72495e51251dbfa449374fbb053.bindTooltip(
+                `<div>
+                     k9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
